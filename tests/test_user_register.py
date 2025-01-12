@@ -1,5 +1,4 @@
 import requests
-from Lesson_01.main import response
 from lib.base_case import BaseCase
 from lib.assertions import Assertions
 from datetime import datetime
