@@ -8,7 +8,6 @@ class Assertions:
             response_as_dict = response.json()
         except json.JSONDecodeError:
             assert False, f"Ответ не в формате JSON. Текст ответа: '{response.text}'"
-
         assert name in response_as_dict, f"В ответе JSON нет ключа '{name}'"
         assert response_as_dict[name] == expected_value, error_message
 
@@ -19,7 +18,6 @@ class Assertions:
             response_as_dict = response.json()
         except json.JSONDecodeError:
             assert False, f"Ответ не в формате JSON. Текст ответа: '{response.text}'"
-
         assert name in response_as_dict, f"В ответе JSON нет ключа '{name}'"
 
 
@@ -39,7 +37,6 @@ class Assertions:
             response_as_dict = response.json()
         except json.JSONDecodeError:
             assert False, f"Ответ не в формате JSON. Текст ответа: '{response.text}'"
-
         assert name not in  response_as_dict, f"В ответе JSON не должно быть ключа '{name}. Но он есть'"
 
 
