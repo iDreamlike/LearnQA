@@ -1,6 +1,7 @@
 import json.decoder
 from requests import Response
 from datetime import datetime
+import random
 
 
 class BaseCase:
@@ -19,9 +20,7 @@ class BaseCase:
             response_as_dict = response.json()
         except json.decoder.JSONDecodeError:
             assert False, f"Ответ не в JSON формате. Текст ответа: '{response.text}'"
-
         assert name in response_as_dict, f"Ответ JSON не имеет ключа '{name}'"
-
         return response_as_dict[name]
 
 
@@ -30,8 +29,8 @@ class BaseCase:
             base_part = "learnqa"
             domain = "example.com"
             random_part = datetime.now().strftime("%Y%m%d%H%M%S")
-            email = f"{base_part}{random_part}@{domain}"
-            print(email)
+            random_part2 = random.randint(1, 1000)
+            email = f"{base_part}_{random_part}_{random_part2}@{domain}"
         return {
             'password': '123',
             'username': 'learnqa',
@@ -39,3 +38,12 @@ class BaseCase:
             'lastName': 'learnqa',
             'email': email
         }
+
+
+    def prepare_registration_email(self):
+        base_part = "learnqa"
+        domain = "example.com"
+        random_part = datetime.now().strftime("%Y%m%d%H%M%S")
+        random_part2 = random.randint(1, 1000)
+        email = f"{base_part}_{random_part}_{random_part2}@{domain}"
+        return email
