@@ -15,7 +15,9 @@ class TestUserEdit(BaseCase):
         first_name = register_data["firstName"]
         password = register_data["password"]
         user_id = self.get_json_value(response1, "id")
-        # print("\n", first_name)
+
+        r = requests.get(f"https://playground.learnqa.ru/api/user/{user_id}")
+
 
         #LOGIN
         login_data = {
@@ -30,20 +32,28 @@ class TestUserEdit(BaseCase):
         #EDIT
         new_name = "Changed Name"
 
-        # response3 = requests.put(
-        #     f"https://playground.learnqa.ru/api/user/{user_id}",
-        #     headers={"x-csrf-token": token},
-        #     cookies={"auth_sid": auth_sid},
-        #     data={"firstName": new_name}
-        # )
+        response3 = requests.put(
+            f"https://playground.learnqa.ru/api/user/{user_id}",
+            headers={"x-csrf-token": token},
+            cookies={"auth_sid": auth_sid},
+            data={"firstName": new_name}
+        )
+        # print(response3.status_code, response3.text)
+        Assertions.assert_code_status(response3, 200)
 
-        # Assertions.assert_code_status(response3, 200)
 
         #GET
         response4 = requests.get(
             f"https://playground.learnqa.ru/api/user/{user_id}",
             headers={"x-csrf-token": token},
-            cookies={"auth_id": auth_sid}
+            cookies={"auth_sid": auth_sid}
         )
 
-        Assertions.assert_json_value_by_name(response4, "firstName", new_name,"Wrong name of the user after edit")
+        print(response4.status_code, response4.text)
+        Assertions.assert_json_value_by_name(
+            response4,
+            "firstName",
+            new_name,
+            "Wrong name of the user after edit")
+
+        Assertions.assert_json_has_keys(response4, ["username"])
