@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
     with open(file_path, 'r', encoding='utf-8') as file:
         documents = yaml.safe_load_all(file)
-        fields_to_check = ['productCode', 'requestType', 'advCode']
+        fields_to_check = ['productCode', 'requestType', 'advCode', 'landings']
         all_issues = {}
         print(f"Проверяем поля: {fields_to_check}")
 
