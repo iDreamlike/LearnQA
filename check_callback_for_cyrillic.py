@@ -33,7 +33,7 @@ def check_yaml_for_cyrillic(data, fields_to_check, path=""):
 if __name__ == "__main__":
     # Собираем путь к yaml-файлу
     file_path = os.path.join('resources', 'corp-showcase-callback.yml')
-
+    print(file_path)
     with open(file_path, 'r', encoding='utf-8') as file:
         documents = yaml.safe_load_all(file)
         fields_to_check = ['productCode', 'requestType', 'advCode', 'landings']

@@ -23,11 +23,11 @@ suz:
       requestType: 'APP_CORP_VED'
       advCode: 'clb_corp_compleks_ved'
     09a544dc-a24a-4762-a1b4-d4d640ed32a9:
-      productCode: 'LP_AСQ_E'
+      productCode: 'LP_ACQ_E'
       requestType: 'APP_CORP_INTERNET_ACQUIRING'
       advCode: 'CLB_CORP_INTERNET_ACQUIRING'
     60c17b5f-9164-4710-8704-511e315b3a69:
-      productCode: 'LP_AСQ_E'
+      productCode: 'LP_ACQ_E'
       requestType: 'APP_CORP_INTERNET_ACQUIRING'
       advCode: 'CLB_CORP_INTERNET_ACQUIRING'
     a1913d86-eadb-4ac5-8f93-78c3a34c6320:
@@ -47,7 +47,7 @@ suz:
       requestType: 'APP_CORP_TRADE_ACQUIRING'
       advCode: 'CLB_CORP_TRADE_ACQUIRING'
     08033950-dfb2-44ff-9641-27b42a334d0a:
-      productCode: 'LP_AСQ_E'
+      productCode: 'LP_ACQ_E'
       requestType: 'APP_CORP_INTERNET_ACQUIRING'
       advCode: 'CLB_CORP_INTERNET_ACQUIRING'
     9ded5abc-40e4-4bdc-8578-2e135cde0075:
@@ -119,7 +119,7 @@ suz:
     919e82c9-0e24-4853-9a13-a75de2d4212b:
       productCode: 'LP_FEA_HEDG'
       requestType: 'app_corp_lp_fes_hedg_ab'
-      advCode: 'сlb_app_corp_lp_fes_hedg_aboss'
+      advCode: 'clb_app_corp_lp_fes_hedg_aboss'
     fc436726-b10e-471a-af53-ef62ab141d31:
       productCode: 'LP_FEA_CURC'
       requestType: 'APP_CORP_VED'
@@ -157,7 +157,7 @@ suz:
       requestType: 'app_corp_Overdraft'
       advCode: 'clb_corp_Overdraft_lrp'
     7c796da3-79d8-42ca-8c93-4040197d6183:
-      productCode: 'LP_AСQ_E'
+      productCode: 'LP_ACQ_E'
       requestType: 'APP_CORP_INTERNET_ACQUIRING'
       advCode: 'clb_corp_internet_acquiring_lpr'
     b7c72b58-fccb-41f8-a51d-9720b2294850:
@@ -675,15 +675,15 @@ suz:
       advCode: 'nib_zpp_standart'
     f053053b-0d06-4402-b573-523dfc08bb3e:
       productCode: 'LP_FEA_CURC'
-      requestType: 'app_corp_lp_fea_curc_сonsult'
+      requestType: 'app_corp_lp_fea_curc_consult'
     639f0346-39a1-48be-8cf2-5b799188946e:
       productCode: 'LP_LOAN_BUS'
       requestType: 'app_corp_lp_loan_bus_ab'
-      advCode: 'сlb_app_corp_lp_loan_bus_aboss'
+      advCode: 'clb_app_corp_lp_loan_bus_aboss'
     d8690ab7-fdc0-4caa-a06c-f6fce6cb5804:
       productCode: 'LP_ENCASH_SF'
       requestType: 'app_corp_lp_encash_sf_ab'
-      advCode: 'сlb_app_corp_lp_encash_sf_aboss'
+      advCode: 'clb_app_corp_lp_encash_sf_aboss'
     d8380e2f-027d-4228-b1ed-e8f85a3e4aef:
       productCode: 'INTERNETACQUIRING_NEW'
       requestType: 'ACQUIRING_CALL_BACK'
@@ -735,34 +735,34 @@ suz:
     02f80cb3-98c2-4c3e-a28a-f0410623d1bd:
       productCode: 'LP_LOAN_OTH'
       requestType: 'app_corp_lp_loan_dfa_abm'
-      advCode: 'сlb_app_corp_lp_loan_dfa_abm'
+      advCode: 'clb_app_corp_lp_loan_dfa_abm'
     f364fdd8-1ef1-4028-91df-e4c2c702de15:
       productCode: 'LP_TDS'
       requestType: 'app_corp_fixed_abm'
-      advCode: 'сlb_app_corp_fixed_abm'
+      advCode: 'clb_app_corp_fixed_abm'
     80b03525-ea5c-4cf9-8cc4-9579f6ec2b83:
       productCode: 'LP_TDS'
       requestType: 'app_corp_dfa_dep_abm'
-      advCode: 'сlb_app_corp_dfa_dep_abm'
+      advCode: 'clb_app_corp_dfa_dep_abm'
     0dde7a72-c8b2-41d5-94c1-8b944381146c:
       productCode: 'LP_FEA_CURC'
       requestType: 'app_corp_lp_fea_abm'
-      advCode: 'сlb_app_corp_lp_fea_abm'
+      advCode: 'clb_app_corp_lp_fea_abm'
     05d77586-c23c-4a39-9229-3ef067d8ace7:
       productCode: 'LP_FEA_HEDG'
       requestType: 'app_corp_hedging_risk'
     96f9358c-3882-4d1d-9251-9a0790487b46:
       productCode: 'LP_ACQ_TR'
       requestType: 'app_corp_lp_sbp_abm'
-      advCode: 'сlb_app_corp_lp_sbp_abm'
+      advCode: 'clb_app_corp_lp_sbp_abm'
     5ca6d1fc-dcd5-4476-9b06-85be97f67c46:
       productCode: 'LP_LOAN_AKK'
       requestType: 'app_corp_lp_loan_akk_abm'
-      advCode: 'сlb_app_corp_lp_loan_akk_abm'
+      advCode: 'clb_app_corp_lp_loan_akk_abm'
     dfd00c80-dfda-4f53-881e-e23501d502b5:
       productCode: 'LP_ENCASH_SF'
       requestType: 'app_corp_lp_encash_sf_abm'
-      advCode: 'сlb_app_corp_lp_encash_sf_abm'
+      advCode: 'clb_app_corp_lp_encash_sf_abm'
     ce580f74-f25a-4a35-ba6e-41ac79fde342:
       productCode: 'LP_LOAN_BUS'
       requestType: 'LOAN_CALL_BACK'
@@ -771,6 +771,26 @@ suz:
       productCode: 'LP_LOAN_BUS'
       requestType: 'LOAN_CALL_BACK'
       advCode: 'NIB_IZS_PILOT'
+    97ecf45a-5ce9-4eb9-9a77-77fc29f580db:
+      productCode: 'LP_LOAN_BUS'
+      requestType: 'LOAN_CALL_BACK'
+      advCode: 'NIB_BK_ANNUITET'
+    bd4c62b7-20c8-496d-9b0c-c9d114526761:
+      productCode: 'LP_LOAN_BUS'
+      requestType: 'app_corp_lp_loan_bus_abm'
+      advCode: 'clb_app_corp_lp_loan_bus_abm'
+    7a6ed6dd-824a-4a9e-a4b7-36de217b167e:
+      productCode: 'LP_LOAN_BUS'
+      requestType: 'app_corp_lp_loan_bus_abm'
+      advCode: 'clb_app_corp_lp_loan_bus_abm'
+    8faf8865-47dc-4150-b5f7-bf99624d14bf:
+      productCode: 'LP_LOAN_BUS'
+      requestType: 'app_corp_lp_loan_bus_abm'
+      advCode: 'clb_app_corp_lp_loan_bus_abm'
+    5cb98662-4dca-4044-a532-7cfc3763c90e:
+      productCode: 'LP_LOAN_BUS'
+      requestType: 'app_corp_lp_loan_bus_abm'
+      advCode: 'clb_app_corp_lp_loan_bus_abm'
 
 ---
 spring.profiles: kubernetes
